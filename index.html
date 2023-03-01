@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dom er ajke special event</h1>
+    <button onclick="console.log(7)">click me</button>
+    <button onclick="document.body.style.backgroundColor='yellow'">new click me</button>
+    <button onclick="makered()">make red</button>
+    <button id="make-blue">make blue</button>
+    <button id="make-purple">make purple</button>
+    <button id="make-pink">make-pink</button>
+    <button id="make-goldenrod">make-golden</button>
+    <button id="event-listner">Handle event </button>
+
+    <h3 id="handler-status">default text</h3>
+    <button onclick="handleOnClick()">Handle event by add onclick function</button>
+    <script  src="js/events.js"></script>
+    <script>  
+    document.getElementById('event-listner').addEventListener('click',function(){
+        const handlerstatus = document.getElementById('handler-status');
+        handlerstatus.innerText = 'text updated';
+    })
+
+       
+    </script>
+</body>
+</html>
